@@ -19,7 +19,7 @@ async function getWeather(city) {
     }
 
     try {
-        const response = await fetch(`http://localhost:3000/weather?city=${city}`);
+        const response = await fetch(`https://weather-backend-w2cp.onrender.com/weather?city=${city}`);
         const data = await response.json();
 
         // If city does not exist
